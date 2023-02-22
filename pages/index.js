@@ -6,15 +6,20 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Sensus Sample Data</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <div>
+          <p className="description">
+            Navigate to <code>/api/docket/95508</code> for the docket page data.
+          </p>
+          <p>
+            Navigate to <code>/api/patents/(application|patent|publication)/(number)</code> for the associated patents found in the docket data.
+          </p>
+        </div>
       </main>
 
       <Footer />
