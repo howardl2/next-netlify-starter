@@ -14,10 +14,16 @@ export default function Home() {
         <Header title="Welcome to my app!" />
         <div>
           <p className="description">
+            Navigate to <code>/api/auth/verify</code> to check session validity and get user session info.
+          </p>
+          <p className="description">
+            Navigate to <code>/api/auth/pulse</code> to maintain session validity.
+          </p>
+          <p className="description">
             Navigate to <code>/api/docket/95508</code> for the docket page data.
           </p>
-          <p>
-            Navigate to <code>/api/patents/(application|patent|publication)/(number)</code> for the associated patents found in the docket data.
+          <p className="description">
+            Navigate to <code>/api/documents/application/(number)</code> for the associated document data found for each docket entry.
           </p>
         </div>
       </main>

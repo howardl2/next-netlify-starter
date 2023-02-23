@@ -6,7 +6,7 @@ const data = [
         "patent_num": null,
         "publication_num": "US 2022-0147877 A1",
         "customer_num": "95508",
-        "docket_num": "DARAI.001.C1",
+        "docket_num": "SENSUS.001",
         "filing_date": "2021-11-17T00:00:00Z",
         "last_submission_date": "2022-09-09T00:00:00Z",
         "group_art_unit_num": "2122",
@@ -26,7 +26,7 @@ const data = [
         "patent_num": null,
         "publication_num": "US 2021-0374789 A1",
         "customer_num": "95508",
-        "docket_num": "GNL002USU",
+        "docket_num": "SENSUS.001",
         "filing_date": "2020-05-26T00:00:00Z",
         "last_submission_date": "2022-09-08T00:00:00Z",
         "group_art_unit_num": "3688",
@@ -46,7 +46,7 @@ const data = [
         "patent_num": null,
         "publication_num": null,
         "customer_num": "95508",
-        "docket_num": "T0089.0045",
+        "docket_num": "SENSUS.001",
         "filing_date": "2022-07-08T00:00:00Z",
         "last_submission_date": "2022-09-08T00:00:00Z",
         "group_art_unit_num": "",
@@ -66,7 +66,7 @@ const data = [
         "patent_num": null,
         "publication_num": null,
         "customer_num": "95508",
-        "docket_num": "HW20003USU",
+        "docket_num": "SENSUS.001",
         "filing_date": "2020-06-18T00:00:00Z",
         "last_submission_date": "2022-09-08T00:00:00Z",
         "group_art_unit_num": "3786",
@@ -86,7 +86,7 @@ const data = [
         "patent_num": null,
         "publication_num": "US 2020-0268584 A1",
         "customer_num": "95508",
-        "docket_num": "ASCLP.002",
+        "docket_num": "SENSUS.001",
         "filing_date": "2020-02-28T00:00:00Z",
         "last_submission_date": "2022-09-08T00:00:00Z",
         "group_art_unit_num": "3785",
@@ -106,7 +106,7 @@ const data = [
         "patent_num": null,
         "publication_num": "US 2022-0189239 A1",
         "customer_num": "95508",
-        "docket_num": "TMI.001",
+        "docket_num": "SENSUS.001",
         "filing_date": "2022-02-01T00:00:00Z",
         "last_submission_date": "2022-09-07T00:00:00Z",
         "group_art_unit_num": "3715",
@@ -126,7 +126,7 @@ const data = [
         "patent_num": null,
         "publication_num": "US 2021-0210958 A1",
         "customer_num": "95508",
-        "docket_num": "OPERA.002.C4",
+        "docket_num": "SENSUS.001",
         "filing_date": "2020-12-29T00:00:00Z",
         "last_submission_date": "2022-09-09T00:00:00Z",
         "group_art_unit_num": "2836",
@@ -146,7 +146,7 @@ const data = [
         "patent_num": null,
         "publication_num": null,
         "customer_num": "95508",
-        "docket_num": "DRWOV.001.C1",
+        "docket_num": "SENSUS.001",
         "filing_date": "2022-05-31T00:00:00Z",
         "last_submission_date": "2022-09-08T00:00:00Z",
         "group_art_unit_num": "3791",
@@ -166,7 +166,7 @@ const data = [
         "patent_num": null,
         "publication_num": "US 2021-0282789 A1",
         "customer_num": "95508",
-        "docket_num": "SEQME.015",
+        "docket_num": "SENSUS.001",
         "filing_date": "2021-03-10T00:00:00Z",
         "last_submission_date": "2022-09-07T00:00:00Z",
         "group_art_unit_num": "3771",
@@ -186,7 +186,7 @@ const data = [
         "patent_num": null,
         "publication_num": null,
         "customer_num": "95508",
-        "docket_num": "PRIC.006.P1",
+        "docket_num": "SENSUS.001",
         "filing_date": "2022-09-09T00:00:00Z",
         "last_submission_date": "2022-09-08T00:00:00Z",
         "group_art_unit_num": "",
@@ -202,11 +202,5 @@ const data = [
 ];
 
 export default async function handler(req, res) {
-    // const myJsonList = [
-    //     { id: 1, name: 'Item 1' },
-    //     { id: 2, name: 'Item 2' },
-    //     { id: 3, name: 'Item 3' }
-    // ];
-
     res.status(200).json(data);
 }
