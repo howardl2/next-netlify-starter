@@ -16,7 +16,9 @@ export default nextConnect().get((req, res) => {
             res.status(404).end();
             return;
         }
-
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT');
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
         res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`);
         res.setHeader('Content-Type', 'application/pdf');
         res.send(data);
