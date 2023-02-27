@@ -14,7 +14,13 @@ export default function Home() {
         <Header title="Welcome to my app!" />
         <div>
           <p className="description">
-            Navigate to <code>/api/auth/verify</code> to check session validity and get user session info.
+            Navigate to <code>/api/auth/users/me</code> to check session validity and get user session info.
+          </p>
+          <p className="description">
+            Navigate to <code>/api/auth/users/password-reset</code> send a password reset request.
+          </p>
+          <p className="description">
+            Navigate to <code>/api/auth/login</code> to login. Returns no data.
           </p>
           <p className="description">
             Navigate to <code>/api/auth/pulse</code> to maintain session validity.
