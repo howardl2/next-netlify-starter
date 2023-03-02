@@ -30,6 +30,7 @@ export default function Home() {
           </p>
           <p className="description">
             Navigate to <code>/api/documents/application/(number)</code> for the associated document data found for each docket entry.
+            The chosen sample application number is <code>16807146</code>.
           </p>
         </div>
       </main>
