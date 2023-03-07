@@ -1,8 +1,20 @@
 export default async function handler(req, res) {
+    const { query } = req;
+
+    let toRet = data;
+
+    const document_type = query.document_type
+    if (document_type === "claims") {
+        toRet = data.filter(doc => doc.document_code === "CLM")
+    } else if (document_type === "responses") {
+        toRet = data.filter(doc => doc.document_code === "REM")
+    }
+
+
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    res.status(200).json(data);
+    res.status(200).json(toRet);
 }
 
 const data = [

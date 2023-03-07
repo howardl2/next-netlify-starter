@@ -13,24 +13,34 @@ export default function Home() {
       <main>
         <Header title="Welcome to my app!" />
         <div>
-          <p className="description">
+          <p>
             Navigate to <code>/api/auth/users/me</code> to check session validity and get user session info.
           </p>
-          <p className="description">
+          <p>
             Navigate to <code>/api/auth/users/password-reset</code> send a password reset request.
           </p>
-          <p className="description">
+          <p>
             Navigate to <code>/api/auth/login</code> to login. Returns no data.
           </p>
-          <p className="description">
+          <p>
+            Navigate to <code>/api/auth/logout</code> to log out. Returns no data.
+          </p>
+          <p>
             Navigate to <code>/api/auth/pulse</code> to maintain session validity.
           </p>
-          <p className="description">
-            Navigate to <code>/api/docket/95508</code> for the docket page data.
+          <p>
+            Navigate to <code>/api/docket</code> for the docket page data.
           </p>
-          <p className="description">
+          <p>
             Navigate to <code>/api/documents/application/(number)</code> for the associated document data found for each docket entry.
-            The chosen sample application number is <code>16807146</code>.
+            The chosen sample application number is "16807146"
+            This route supports the "document_type" query parameter.
+            To retrieve claims, specify <code>?document_type=claims</code>
+            To retrieve responses, specify <code>?document_type=responses</code>
+          </p>
+          <p>
+            Navigate to <code>/api/patents/application/(number)</code> for the associated patent data found for each record retrieved from docket.
+            The chosen sample application number is the same as above: "16807146"
           </p>
         </div>
       </main>
