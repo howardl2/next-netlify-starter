@@ -10,7 +10,7 @@ export default function handler(req, res) {
 
         res.setHeader('Access-Control-Allow-Origin', '*');
         res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT');
-        res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Content-Disposition');
         res.setHeader('Content-Disposition', 'attachment; filename="16807146/KU2ZNJQSLDFLYX9.PDF"');
         res.setHeader('Content-Type', 'application/pdf');
         res.send(data);
