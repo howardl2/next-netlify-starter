@@ -42,6 +42,11 @@ export default function Home() {
             Navigate to <code>/api/patents/application/(number)</code> for the associated patent data found for each record retrieved from docket.
             The chosen sample application number is the same as above: "16807146"
           </p>
+          <p>
+            Navigate to <code>/api/documents/file/(file-key)</code> for the PDFs associated with the patent application documents retrieved from the above API.
+            The above API has a response object with a field called <code>file_location</code>
+          </p>
+          <p>Use "16807146" as the sample application number. So routes should be <code>/api/documents/file/(file_location.key)</code>. Example would be <code>/api/documents/file/16807146/K7BD722FRXEAPX5.PDF</code> for the spec</p>
         </div>
       </main>
 
